@@ -52,7 +52,7 @@ export default function App() {
         temp += data2[j].temperature * 1
       }
 
-      volt = Math.round((volt / len1) * 100)/100;
+      volt = Math.round((volt / len1) * 100);
       tds = Math.round((tds / len1) * 100)/100;
       temp = Math.round((temp / len2) * 100)/100;
       setPara([volt, tds, temp]);
