@@ -51,9 +51,9 @@ export default function App() {
       for (var j = 0; j < len2; j++) {
         temp += data2[j].temperature * 1
       }
-      volt = data1[len1].voltage * 1;
-      tds = data1[len2].tds * 1
-      temp = data2[len2].temp * 1;
+      volt = data1[len1-1].voltage * 1;
+      tds = data1[len2-1].tds * 1
+      temp = data2[len2-1].temp * 1;
     
       tds = Math.round((tds / 1000));
       temp = Math.round((temp / len2) * 100)/100;
